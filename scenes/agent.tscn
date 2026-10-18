@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bp4dfcpspwit6"]
+
+[ext_resource type="Script" uid="uid://ctgc2828256mu" path="res://scripts/agent.gd" id="1_agent"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_lq8mt"]
+radius = 0.25
+height = 1.6
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_kp1rb"]
+radius = 0.25
+height = 1.6
+
+[node name="Agent" type="RigidBody3D" unique_id=1941597602]
+axis_lock_linear_y = true
+axis_lock_angular_x = true
+axis_lock_angular_y = true
+axis_lock_angular_z = true
+gravity_scale = 0.0
+script = ExtResource("1_agent")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1016102870]
+shape = SubResource("CapsuleShape3D_lq8mt")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1640562682]
+mesh = SubResource("CapsuleMesh_kp1rb")

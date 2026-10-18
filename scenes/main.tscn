@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dlmx15gfq1gdr"]
+
+[ext_resource type="Script" uid="uid://ciee4vltkkq4i" path="res://scripts/main.gd" id="1_main"]
+
+[node name="Main" type="Node3D" unique_id=1186560472]
+script = ExtResource("1_main")
+door_width = 3.0
+agent_force_gain = 40.0
+random_seed = 5
+pillar_enabled = true
+
+[node name="TopDownCamera" type="Camera3D" parent="." unique_id=712141123]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 25, 0)
+projection = 1
+current = true
+size = 24.0
